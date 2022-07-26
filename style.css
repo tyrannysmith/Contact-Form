@@ -1,0 +1,146 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
+  width: 100vw;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#form h1 {
+  font-weight: 900;
+  text-align: center;
+  margin: 2rem;
+}
+
+#form p {
+  font-size: 0.8rem;
+  color: #080707;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(147, 184, 243);
+  width: 36rem;
+  min-height: 36rem;
+  border-radius: 1rem;
+}
+
+#form button {
+  font-size: 1rem;
+  font-weight: 700;
+  margin: 20px;
+  padding: 1.2em 2.8em;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: transparent;
+  border-radius: 0.6em;
+  cursor: pointer;
+  border-color: #4e0202;
+  color: #fff;
+  box-shadow: 0 0 40px 40px #b04949 inset, 0 0 0 0 #b04949;
+  transition: all 150ms ease-in-out;
+}
+
+#form button:hover {
+  box-shadow: 0 0 10px 0 #b04949 inset, 0 0 10px 4px #b04949;
+  color: #f70e0e;
+}
+
+.input-control {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-control input,
+.input-control textarea {
+  cursor: pointer;
+  border: 2px solid #f0f0f0;
+  border-radius: 6px;
+  display: block;
+  font-size: 12px;
+  padding: 10px;
+  width: 100%;
+}
+
+.input-control textarea {
+  align-self: center;
+}
+
+.input-control input:focus,
+.input-control textarea:focus {
+  outline: 0;
+}
+
+.input-control.success input,
+.input-control.success textarea {
+  border-color: #09c372;
+}
+
+.input-control.error input,
+.input-control.error textarea {
+  border-color: #ff3860;
+}
+
+.input-control .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+}
+
+.input-control #username,
+.input-control #phone,
+.input-control #email,
+.input-control textarea {
+  width: 23rem;
+}
+
+.input-control .label {
+  font-weight: 700;
+}
+
+.input-check {
+  display: flex;
+  width: 26rem;
+  margin-left: 2rem;
+  margin-top: 1rem;
+  position: relative;
+}
+
+.input-check .error {
+  color: #ff3860;
+  font-size: 9px;
+  height: 13px;
+  position: absolute;
+  left: 0.5rem;
+  bottom: -1rem;
+}
+
+input[type=checkbox i] {
+  width: 2rem;
+  margin-right: 0.5rem;
+}
+
+@media (max-width: 40rem) {
+  #form {
+    width: 26rem;
+  }
+
+  .input-check {
+    width: 24rem;
+    margin: 0;
+  }
+}
