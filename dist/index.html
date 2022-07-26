@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Contact Form by Ty</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="form">
+      <!-- Put form here -->
+      <form id="form" action="/">
+        <h1>Contact Form</h1>
+        <div class="input-control">
+          <label for="username" class="label">Full Name</label>
+          <input
+            id="username"
+            name="username"
+            type="text"
+            placeholder="Full Name (First, Last)..."
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <label for="email" class="label">Email Address</label>
+          <input
+            id="email"
+            name="email"
+            type="text"
+            placeholder="example@domain.com"
+          />
+          <div class="error"></div>
+        </div>
+
+        <div class="input-control">
+          <label for="phone" class="label">Contact Number</label>
+          <input
+            id="phone"
+            name="phone"
+            type="tel"
+            placeholder="insert phone number..."
+          />
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <textarea
+            id="comment"
+            cols="50"
+            rows="4"
+            placeholder="Please comment..."
+          ></textarea>
+          <div class="error"></div>
+        </div>
+        <div class="input-control">
+          <div class="input-check">
+            <input type="checkbox" id="input-checkbox" name="terms" />
+            <p>All my information above is correct</p>
+            <div class="error"></div>
+          </div>
+        </div>
+        <button type="submit">Submit Your Information</button>
+      </form>
+
+      <script src="./script.js"></script>
+    </div>
+  </body>
+</html>
